@@ -30,9 +30,6 @@ module.exports = {
       },
       center: true,
     },
-    fontFamily: {
-      inter: ['inter', 'sans-serif'],
-    },
     letterSpacing: {
       tighter: '-1px', //use
       midtighter: '0.3px',
