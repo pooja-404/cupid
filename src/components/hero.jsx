@@ -60,9 +60,22 @@ function Hero() {
                                 </a>
                             </li>
 
+                                <li className='lg:hidden block'>
+                                    <a
+                                        href="#nexchat"
+                                        onClick={hide}
+                                        className=" text-white text-center  text-xl font-normal leading-6 hover:after:w-[100%] after:mx-auto after:right-0 after:items-center after:w-0 after:absolute after:bg-[#02CDCF] after:h-[2px] relative after:left-[0] after:bottom-[-5px] after:rounded-[10px] after:transition-all after:duration-300 after:ease-linear"
+                                    >
+                                        Log in
+                                    </a>
+                                  
+                            </li>
+                            <li className='lg:hidden block'>
+                                <Button text='Sign Up' />
+                            </li>
                         </ul>
-                        <div className='flex items-center gap-3'>
-                            <li>
+                        <div className=' lg:block hidden'>
+                            <li className='lg:flex lg:gap-3 items-center'>
                                 <a
                                     href="#nexchat"
                                     onClick={hide}
@@ -70,8 +83,9 @@ function Hero() {
                                 >
                                     Log in
                                 </a>
+                                <Button text='Sign Up' />
                             </li>
-                            <Button text='Sign Up' />
+
                         </div>
                     </>
                     <label
