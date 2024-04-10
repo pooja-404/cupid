@@ -1,109 +1,68 @@
-import React, { useState } from 'react'
-import Button from './Button'
+
+import React from "react";
 import { Logo } from './common/Icons';
+import { Button, navLink } from "./common/Helper";
+import { useOverflowHidden } from "./common/Hooks";
+import { Twirl as Hamburger } from "hamburger-react";
 
-function Navsec() {
-    const [show, setshow] = useState(false);
-    function view() {
-        setshow(!show);
-        document.body.classList.toggle("max-lg:!overflow-hidden");
-    }
-    function hide() {
-        setshow(false);
-        document.body.classList.toggle("max-lg:!overflow-hidden");
-    }
+const Navsec = () => {
+    const [isOpen, setOpen] = useOverflowHidden(false);
     return (
-        <nav className=" max-w-[1296px]  mx-auto px-3 bg-[#01020F] border border-[#3e3d3d] rounded-[60px]">
-            <div className='flex items-center py-2 z-10 relative  justify-between'>
-                <>
-                    <a href="#logo" className='cursour !cursor-pointer'><Logo /></a>
+        <>
+            <nav className=" max-w-[1296px]  mx-auto px-3 bg-black-mid border border-grayoff rounded-[60px]">
+                <div className=" flex items-center justify-between py-3">
+                    <ul>
+                        <li>
+                            <a href="#g" className="relative z-[1]">
+                                <Logo />
+                            </a>
+                        </li>
+                    </ul>
                     <ul
-                        className={` gap-5 flex mobileView ${show ? "right-0" : "right-[-100%]"}`}
+                        className={` ${isOpen ? "right-0" : "-right-full"
+                            } flex max-lg:fixed z-10 max-lg:top-0 max-lg:bg-black md:bg-full max-lg:justify-center bg-cover max-lg:h-full max-lg:w-full max-lg:z-30 max-lg:duration-300 max-lg:flex-col items-center gap-7`}
                     >
-                        <li>
-                            <a
-                                href="#home" onClick={hide}
-                                className=" text-white  text-xl font-normal leading-6 hover:font-semibold duration-300  webkitstroke cursor-pointer transition-all "
-                            >
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#Why us"
-                                onClick={hide}
-                                className=" text-white  text-xl font-normal leading-6 hover:font-semibold duration-300  webkitstroke cursor-pointer transition-all "
-                            >
-                                Why us
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#Services"
-                                onClick={hide}
-                                className=" text-white  text-xl font-normal leading-6 hover:font-semibold duration-300  webkitstroke !cursor-pointer transition-all "
-                            >
-                                Services
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#FAQ"
-                                onClick={hide}
-                                className=" text-white  text-xl font-normal leading-6 hover:font-semibold duration-300  webkitstroke cursor-pointer transition-all "
-                            >
-                                FAQ
-                            </a>
-                        </li>
-                        <li className='lg:hidden block'>
-                            <a href="#log"
-                                onClick={hide}
-                                className=" text-white text-center  text-xl font-normal leading-6 hover:font-semibold duration-300 transition-all  webkitstroke cursor-pointer "
-                            >
+                        {navLink.map((data, index) => (
+                            <li>
+                                <a
+                                    href={data.to}
+                                    className=" navlink duration-300 text-white  font-normal text-xl leading-6 "
+                                >
+                                    {data.linkname}
+                                </a>
+                            </li>
+                        ))}
+                        <li className=" lg:hidden">
+                            <button className="font-normal border-0 text-xl leading-6 cursor-pointer duration-300 text-white hover:text-purple">
                                 Log in
-                            </a>
-
+                            </button>
                         </li>
-                        <li className='lg:hidden block'>
+                        <li className=" lg:hidden">
                             <Button text='Sign Up' />
                         </li>
                     </ul>
-                    <div className=' lg:block hidden'>
-                        <li className='lg:flex lg:gap-4 items-center'>
-                            <a
-                                href="#nexchat"
-                                onClick={hide}
-                                className=" text-white  text-xl font-normal leading-6 hover:font-semibold  webkitstroke cursor-pointer"
-                            >
-                                Log in
-                            </a>
-                            <Button text='Sign Up' />
-                        </li>
-
+                    <ul className=" hidden items-center gap-5 lg:flex ">
+                        <button className="font-normal border-0 text-xl relative z-[1] cursor-pointer leading-6 duration-300 text-white hover:text-purple">
+                            Log in
+                        </button>
+                        <Button text='Sign Up' />
+                    </ul>
+                    <div className="relative z-40 mx-2 sm:mx-3 lg:hidden">
+                        <Hamburger
+                            toggled={isOpen}
+                            toggle={setOpen}
+                            size={26}
+                            rounded
+                            distance="sm"
+                            direction="right"
+                            duration={0.5}
+                            color="white"
+                        />
                     </div>
-                </>
-                <label
-                    className="cursor-pointer lg:hidden w-[32px] sm:h-[26px] h-[22px] relative z-50 flex justify-between flex-col"
-                    onClick={view}
-                >
-                    <span
-                        className={`${show
-                            ? "rotate-[50deg] translate-y-[16px] sm:translate-y-[20px]"
-                            : " "
-                            } bg-[#fff] h-[4px] w-full duration-300 rounded-[3px] ease-linear transition-all`}
-                    ></span>
-                    <span
-                        className={`${show ? "hidden" : ""
-                            } bg-[#fff] h-[4px] w-full duration-300 rounded-[3px] ease-linear transition-all`}
-                    ></span>
-                    <span
-                        className={`${show ? "rotate-[-50deg] translate-y-[-50%]" : ""
-                            } bg-[#fff] h-[4px] w-full duration-300 rounded-[3px] ease-linear transition-all`}
-                    ></span>
-                </label>
-            </div>
-        </nav>
-    )
-}
+                </div>
+            </nav>
+        </>
+    );
+};
 
-export default Navsec
+export default Navsec;

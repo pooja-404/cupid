@@ -7,11 +7,7 @@ module.exports = {
   theme: {
     fontSize: {
       xs: '12px',
-      sm: '14px',
       '2sm': '15px',
-      base: '16px',
-      lg: '18px',
-      xl: '20px',
       xxl: '22px',
       '2xl': '24px',
       '3xl': '30px',
@@ -79,6 +75,9 @@ module.exports = {
         'gray-white-500': '#FFFFFF1A',
         'gray-white-600': '#FFFFFF0D',
         'gray-black-200': '#858585',
+        'black-mid': '#000001',
+        'grayoff': '#3e3d3d',
+        'purple': '#B302B1'
       },
       animation: {
         'moveX': 'translateX 39s linear infinite forwards',
@@ -104,16 +103,18 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
-        "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%);",
-        'whitegradient': "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%)",
         'whiteborder': "linear-gradient(106.78deg, rgba(255, 255, 255, 0.23) 6.02%, rgba(255, 255, 255, 0.0759) 104.65%)",
         'headerTextgradient': "linear-gradient(88.36deg, #7F04E3 45.88%, #FF006B 76.63%)",
         'btngradient': "linear-gradient(191.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
         'gradientTrailBtn': "linear-gradient(96.17deg, #7F04E3 6%, #FF006B 98.41%)",
 
+        // =====
+        "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
+        "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%);",
         'text-gradient': " linear-gradient(88.36deg, #7F04E3 45.88%, #FF006B 76.63%)",
-        'border_gradient': "linear- gradient(266.68deg, rgba(251, 240, 240, 0.18) 23.99 %, rgba(255, 255, 255, 0.04) 43.22 %), linear- gradient(91.18deg, rgba(251, 240, 240, 0.18) 8.62 %, rgba(255, 255, 255, 0.04) 38.8 %)"
+        'border_gradient': "linear- gradient(266.68deg, rgba(251, 240, 240, 0.18) 23.99 %, rgba(255, 255, 255, 0.04) 43.22 %), linear- gradient(91.18deg, rgba(251, 240, 240, 0.18) 8.62 %, rgba(255, 255, 255, 0.04) 38.8 %)",
+        'textgradient': "linear-gradient(97.84deg, #FF4141 0.52%, #FFA6B0 23.61%, #FFB6E6 50%, #FFD8D8 75%, #BF8DFF 100%)",
+        'whitegradient': "linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%)",
       },
       backgroundSize: {
         "BgSize": "100% 100%"
