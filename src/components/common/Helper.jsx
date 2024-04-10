@@ -115,7 +115,7 @@ export const navLink = [
         to: "#Home",
     },
     {
-        linkname: "Whyus",
+        linkname: "Why us",
         to: "#Whyus",
     },
     {

@@ -81,7 +81,7 @@ export const GradientLineBtn = () => {
         <div className=" z-10 relative flex items-center justify-center md:mt-8 md:mb-9 my-7">
             <div className="relative z-20">
                 <button className='text-2sm font-medium text-white leading-2xl text-center mx-auto py-1 px-3 bg-gray-white-500 rounded-[10px] relative z-20 '>£408 billed annually</button></div>
-            <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 !-z-10'>
+            <div className='bg-whitegradient absolute w-full h-[1px] left-0 right-0 -z-10'>
             </div>
         </div>
     )
@@ -89,7 +89,7 @@ export const GradientLineBtn = () => {
 
 export const DiscountBtn = () => {
     return (
-        <button className='py-[4px] px-[8px] bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl' >-20%</button>
+        <button className='py-[4px] px-[8px] bg-light-red text-dark-black-300 font-semibold text-xs rounded-3xl'>-20%</button>
     )
 }
 
