@@ -13,9 +13,7 @@ const Navsec = () => {
                 <div className=" flex items-center justify-between py-3">
                     <ul>
                         <li>
-                            <a href="#g" className="relative z-[1]">
-                                <Logo />
-                            </a>
+                            <a className="flex items-center gap-2 text-3xl font-bold leading-9 text-white" href="/"><span><Logo /></span>CupidAI</a>
                         </li>
                     </ul>
                     <ul
@@ -23,10 +21,11 @@ const Navsec = () => {
                             } flex max-lg:fixed z-10 max-lg:top-0 max-lg:bg-black md:bg-full max-lg:justify-center bg-cover max-lg:h-full max-lg:w-full max-lg:z-30 max-lg:duration-300 max-lg:flex-col items-center gap-7`}
                     >
                         {navLink.map((data, index) => (
-                            <li>
+                            <li key={index}>
                                 <a
+                                    onClick={() => setOpen(false)}
                                     href={data.to}
-                                    className=" navlink duration-300 text-white  font-normal text-xl leading-6 "
+                                    className=" navlink duration-300 text-white font-normal text-xl leading-6"
                                 >
                                     {data.linkname}
                                 </a>

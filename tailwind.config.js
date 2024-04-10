@@ -7,7 +7,11 @@ module.exports = {
   theme: {
     fontSize: {
       xs: '12px',
+      sm: '14px',
       '2sm': '15px',
+      base: '16px',
+      lg: '18px',
+      xl: '20px',
       xxl: '22px',
       '2xl': '24px',
       '3xl': '30px',
@@ -27,12 +31,12 @@ module.exports = {
       center: true,
     },
     letterSpacing: {
-      tighter: '-1px', //use
+      tighter: '-1px',
       midtighter: '0.3px',
-      tightest: '-0.5px', //use
+      tightest: '-0.5px',
       tight: '-.025em',
       normal: '0',
-      wide: '.035em', // use
+      wide: '.035em',
     },
     extend: {
       screens: {
@@ -46,7 +50,8 @@ module.exports = {
         '15': '125%',
         '16': '140%',
         '17': '147%',
-        '18': '156%'
+        '18': '156%',
+        '19': '65px'
       },
       boxShadow: {
         'gradientRed': '0 0 20px 1px #F800B9',

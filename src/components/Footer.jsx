@@ -1,12 +1,12 @@
 import { icons, linkData } from "./common/Helper"
-import { FooterGradientMixup, FooterLogo } from "./common/Icons"
+import { FooterGradientMixup, Logo } from "./common/Icons"
 
 const Footer = () => {
     return (
         <div className="relative mt-10 overflow-x-clip sm:mt-16 md:mt-24 lg:mt-32 ">
             <div className="container relative z-10 max-w-[1300px]">
                 <div className="flex flex-col items-center justify-between py-6 lg:flex-row">
-                    <a className="flex items-center gap-2 text-3xl font-bold leading-9 text-white" href="/"><span><FooterLogo /></span>CupidAI</a>
+                    <a className="flex items-center gap-2 text-3xl font-bold leading-9 text-white" href="/"><span><Logo /></span>CupidAI</a>
                     <ul className="flex flex-wrap items-center justify-center gap-3 mt-3 md:gap-10 lg:gap-24 sm:mt-5 lg:mt-0">
                         {
                             linkData.map((item, index) => (
@@ -18,7 +18,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="flex flex-col-reverse items-center justify-between w-full py-3 border-t border-white sm:flex-row sm:py-5 md:py-6 border-opacity-20">
-                    <p className="mt-4 font-normal font-inter font-sm text-gray-white-100 sm:mt-0">©{(new Date().getFullYear())}. All rights reserved </p>
+                    <p className="mt-4 font-normal  text-sm text-gray-white-100 sm:mt-0">©{(new Date().getFullYear())}. All rights reserved </p>
                     <div className="flex items-center gap-4 sm:gap-5 md:gap-8">
                         {
                             icons.map((items, index) => (

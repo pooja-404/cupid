@@ -11,7 +11,7 @@ const Faq = () => {
     return (
         <div id='Faqs' className='container max-w-[1300px]'>
             <div className='max-w-[700px] mx-auto pt-16 sm:pt-32 md:pt-52 lg:pt-64'>
-                <h2 className='text-4xl font-bold tracking-tighter text-white leading-11'>FAQs</h2>
+                <h2 className='lg:text-4xl sm:text-3xl2 text-3xl1 font-bold tracking-tighter text-white leading-11'>FAQs</h2>
                 <p className='pb-2 mt-5 text-lg leading-6 text-gray font-inter md:text-xl md:leading-7 tracking-tightest md:mt-6'>Answers to the most frequently asked questions.</p>
                 {accordionData.map((item, index) => (
                     <Accordion key={index} onClick={() => toggleAccordion(index)} className={`cursor-pointer border-b border-white border-opacity-10 mt-5 sm:mt-6 md:mt-8 ${item.id === 6 ? "border-0" : ""}`} open={open === index} icon={<Arrow id={index} open={open} />}>

@@ -2,7 +2,7 @@
 import clupiAiImage from "../assets/images/clupiai.webp";
 import { crmData } from "./common/TrustedContant";
 import { YellowMan } from "./common/TrustedIcons";
-const Crm = () => {
+const Cupid = () => {
     return (
         <div id="whyus" className=" bg-bodymain sm:pt-11 mt-[-2px] ">
             <div className="max-w-[1320px] mx-auto px-3">
@@ -57,4 +57,4 @@ const Crm = () => {
     );
 };
 
-export default Crm;
+export default Cupid;
