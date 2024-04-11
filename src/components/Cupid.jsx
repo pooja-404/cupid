@@ -6,7 +6,7 @@ const Cupid = () => {
     return (
         <div id="whyus" className=" bg-bodymain sm:pt-11 mt-[-2px] ">
             <div className="max-w-[1320px] mx-auto px-3">
-                <h2 className="  font-bold lg:text-6xl sm:text-4xl text-3xl2 text-white sm:leading-[56px] leading-[42px]  tracking-[-1.2px]">
+                <h2 className="  font-bold lg:text-6xl sm:text-4xl text-3xl2 text-white sm:leading-[56px]   tracking-[-1.2px]">
                     A CRM created <br />
                     to be your own.
                 </h2>
@@ -44,11 +44,11 @@ const Cupid = () => {
                 <div className="flex justify-center ">
                     <YellowMan />
                 </div>
-                <p className="  font-normal mt-6 text-xl sm:text-xxl leading-8 tracking-wide text-center max-w-[579px] mx-auto text-gray-light-300">
+                <p className="  font-normal mt-6 text-xl sm:text-xxl md:leading-8 tracking-wide text-center max-w-[579px] mx-auto text-gray-light-300">
                     “My team loves cupid reporting system because it’s so dynamic. We can
                     splice our data in so many different ways and combinations.”
                 </p>
-                <p className=" mb:pt-7 md:pb-12 py-7 text-dark-gray  font-medium text-sm leading-5 tracking-[-0.1px] text-center">
+                <p className=" mb:pt-7 md:pb-12 py-7 text-dark-gray  font-medium text-sm md:leading-5 tracking-[-0.1px] text-center">
                     Davio White <br />
                     Chief of Staff, Pallet
                 </p>
