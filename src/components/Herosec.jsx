@@ -16,7 +16,7 @@ function Herosec() {
                     <div className='max-w-[1140px] px-3 mx-auto '>
                         <h2 className='  font-bold text-center text-white  text-3xl2 sm:text-6xl lg:text-7xl  lg:leading-19'>Unleash <span className=' text-transparent bg-text-gradient bg-clip-text'>Creativity,</span>
                             <span className='block '>Effortlessly</span></h2>
-                        <p className=' font-normal text-sm sm:text-xl text-white pt-3 lg:pb-6 pb-4 leading-6  text-center'>Elevate your agency's output with state-of-the-art AI, engineered <span className='lg:block'>to innovate at the speed of thought.</span></p>
+                        <p className=' font-normal text-xl text-white pt-3 lg:pb-6 pb-4 leading-6  text-center'>Elevate your agency's output with state-of-the-art AI, engineered <span className='lg:block'>to innovate at the speed of thought.</span></p>
                         <div className='flex justify-center'>
                             <Button text='Try Now' />
                         </div>
