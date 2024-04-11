@@ -9,7 +9,7 @@ const Navsec = () => {
     const [isOpen, setOpen] = useOverflowHidden(false);
     return (
         <>
-            <nav className=" max-w-[1296px]  mx-auto px-3 bg-black-mid border border-grayoff rounded-[60px]">
+            <nav className=" max-w-[1320px] container bg-black-mid border border-grayoff rounded-[60px]">
                 <div className=" flex items-center justify-between py-3">
                     <ul>
                         <li>
