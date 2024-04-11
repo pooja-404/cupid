@@ -6,7 +6,7 @@ const Cupid = () => {
     return (
         <div id="whyus" className=" bg-bodymain sm:pt-11 mt-[-2px] ">
             <div className="max-w-[1320px] mx-auto px-3">
-                <h2 className="  font-bold lg:text-6xl sm:text-4xl text-3xl2 text-white sm:leading-[56px]   tracking-[-1.2px]">
+                <h2 className="  font-bold lg:text-6xl sm:text-4xl text-3xl2 text-white sm:leading-[56px] leading-10   tracking-[-1.2px]">
                     A CRM created <br />
                     to be your own.
                 </h2>
