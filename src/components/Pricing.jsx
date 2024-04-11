@@ -48,7 +48,7 @@ const Pricing = () => {
                             PricedataYear.map((item, index) => (
                                 <div key={index} className='flex items-center justify-center w-full mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
                                     <div className='max-w-[404px] relative z-10 transition-all duration-300 ease-linear cursor-pointer blur_box_border hover:scale-[1.03] hover:z-20 group lg:h-[725px] sm:h-[667px] lg:hover:h-[774px] sm:hover:h-[667px] h-full'>
-                                        <div className='sm:p-8 p-5 rounded-3xl flex justify-between flex-col lg:h-[725px] h-[667px] lg:hover:h-[774px]   transition-all duration-300 ease-linear'>
+                                        <div className='sm:p-8 p-5 rounded-3xl flex justify-between flex-col lg:h-[725px] h-[667px] lg:hover:h-[774px] transition-all duration-300 ease-linear'>
                                             <div>
                                                 <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-3xl1 leading-18 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
                                                 <p className='my-6 text-base font-medium leading-15 text-dark-gray'>{item.para}</p>
