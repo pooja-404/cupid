@@ -5,11 +5,11 @@ const TrustedCompany = () => {
     return (
         <div
             id="Whyus"
-            className="pb-6 -mt-24 overflow-hidden sm:pb-10 sm:-mt-40 md:-mt-64 bg-bodymain "
+            className="md:pb-6 -mt-24 overflow-hidden sm:pb-10 sm:-mt-40 md:-mt-64 bg-bodymain "
         >
             <div
                 id="howtouse"
-                className="max-w-[1112px] mx-auto px-3   xl:-mt-9 md:mt-24 mt-7 pb-10 mb-8"
+                className="max-w-[1112px] mx-auto px-3   xl:-mt-9 md:mt-24 mt-7 pb-10 md:mb-8"
             >
                 <p className="  font-normal sm:text-xl text-lg   mt-9 leading-[30px] text-center text-gray-white-200">
                     Trusted by 4,000+ companies
@@ -24,7 +24,7 @@ const TrustedCompany = () => {
                             <img
                                 src={obj.companyLogo}
                                 alt={obj.alt}
-                                className={` w-full   object-contain  lg:min-h-12`}
+                                className={` w-full  object-contain lg:min-h-12`}
                             />
                         </a>
                     ))}

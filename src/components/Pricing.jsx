@@ -10,11 +10,11 @@ const Pricing = () => {
             <div id='pricing' className="xl:max-w-[1219px] lg:pt-24 md:pt-14 container">
                 <h2 className='font-bold tracking-tighter text-center text-white lg:text-4xl sm:text-3xl2 text-3xl1 leading-16'>Pricing</h2>
                 <p className='pt-4 font-medium text-center text-gray text-xl sm:text-xxl sm:pt-5'>Tweak anything and everything to ensure fits <span className='sm:block'>your business, not the other way around.</span></p>
-                <div className='bg-gray-white-500 rounded-2md p-1 max-w-[192px] mx-auto w-full flex justify-between md:mt-[44.5px] mt-6'>
+                <div className='bg-gray-white-500 rounded-2md p-1 max-w-[192px] mx-auto w-full flex justify-between md:mt-11 mt-6'>
                     <button onClick={() => setToggle(1)} className={`py-[6px] px-[18px] rounded-3md text-base  transition-all duration-300 ease-linear font-medium text-white ${toggle === 1 ? "bg-gray-white-500" : ""}`}>Yearly</button>
                     <button onClick={() => setToggle(2)} className={`py-[6px] px-[18px] rounded-3md text-base font-medium text-white transition-all duration-300 ease-linear ${toggle === 2 ? "bg-gray-white-500" : ""}`}>Monthly</button>
                 </div>
-                <div className='flex items-center flex-wrap justify-center w-full md:mt-16 sm:mt-10 mt-6 min-h-[780px]'>
+                <div className='flex items-center flex-wrap justify-center w-full md:mt-16 sm:mt-10  min-h-[780px]'>
                     {toggle === 2 && <>
                         {
                             PricedataMonth.map((item, index) => (

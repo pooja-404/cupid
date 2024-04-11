@@ -48,7 +48,7 @@ const Cupid = () => {
                     “My team loves cupid reporting system because it’s so dynamic. We can
                     splice our data in so many different ways and combinations.”
                 </p>
-                <p className=" pt-7 pb-12 text-dark-gray  font-medium text-sm leading-5 tracking-[-0.1px] text-center">
+                <p className=" mb:pt-7 md:pb-12 py-7 text-dark-gray  font-medium text-sm leading-5 tracking-[-0.1px] text-center">
                     Davio White <br />
                     Chief of Staff, Pallet
                 </p>

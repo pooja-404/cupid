@@ -15,23 +15,20 @@ function App() {
   const isLoading = usePreloader();
   return (
     <div className="mx-auto overflow-hidden font-inter bg-black-primary">
-      <div className='max-w-[1920px] mx-auto'>
-        {
-          isLoading ? (<Preloader />) : (<>
-            <Herosec />
-            <TrustedCompany />
-            <Cupid />
-            <div className='bg-[url(./assets/images/servicebg.webp)] bg-BgSize bg-center bg-no-repeat'>
-              <ServiceCard />
-            </div>
-            <Pricing />
-            <Faq />
-            <IdentityHub />
-            <Footer />
-            <BackToTop /></>)
-        }
-      </div>
-
+      {
+        isLoading ? (<Preloader />) : (<>
+          <Herosec />
+          <TrustedCompany />
+          <Cupid />
+          <div className='bg-[url(./assets/images/servicebg.webp)] bg-BgSize bg-center bg-no-repeat'>
+            <ServiceCard />
+          </div>
+          <Pricing />
+          <Faq />
+          <IdentityHub />
+          <Footer />
+          <BackToTop /></>)
+      }
     </div >
   )
 
