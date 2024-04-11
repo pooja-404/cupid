@@ -80,7 +80,6 @@ export const Business = [
         description: "Unlimited Team Members"
     },
 ]
-
 export const Button = (props) => {
     return (
         <button className={`${props.name}  items-center justify-center leading-6  ease-linear duration-300   hover:shadow-[0px_0px_12px_0px_#7F04E3]   bg-btngradient text-white text-sm sm:text-xl  rounded-[50px] px-7 relative z-10 py-3 font-medium`}>
@@ -98,7 +97,7 @@ export const accordionData = [
 ];
 
 export const linkData = [
-    { path: "#features", link: "features" },
+    { path: "#Whyus", link: "features" },
     { path: "#service", link: "Services" },
     { path: "#pricing", link: "pricing" },
     { path: "#howtouse", link: "how to use" },
