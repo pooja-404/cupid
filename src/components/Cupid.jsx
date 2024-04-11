@@ -10,7 +10,7 @@ const Cupid = () => {
                     A CRM created <br />
                     to be your own.
                 </h2>
-                <p className="  font-medium text-xxl text-dark-gray mt-[22px] tracking-[0.2px]">
+                <p className="  font-medium text-xl sm:text-xxl text-gray mt-5 tracking-[0.2px]">
                     Tweak anything and everything to ensure fits
                     <br />
                     your business, not the other way around.
@@ -28,7 +28,7 @@ const Cupid = () => {
                                         {obj.title}
                                     </h2>
                                 </div>
-                                <p className=" group-hover:text-gray-dark-200 duration-200 pt-[10px]  font-medium text-base leading-6 tracking-[-0.2px] text-gray-light-300">
+                                <p className=" group-hover:text-gray-dark-200 duration-200 pt-[10px]  font-medium sm:text-base 2sm leading-6 tracking-[-0.2px] text-gray-light-300">
                                     {obj.para}
                                 </p>
                             </div>
@@ -44,7 +44,7 @@ const Cupid = () => {
                 <div className="flex justify-center ">
                     <YellowMan />
                 </div>
-                <p className="  font-normal mt-6 text-xxl leading-[30px] tracking-wide text-center max-w-[579px] mx-auto text-gray-light-300">
+                <p className="  font-normal mt-6 text-xl sm:text-xxl leading-8 tracking-wide text-center max-w-[579px] mx-auto text-gray-light-300">
                     “My team loves cupid reporting system because it’s so dynamic. We can
                     splice our data in so many different ways and combinations.”
                 </p>
