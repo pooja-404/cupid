@@ -82,7 +82,7 @@ export const Business = [
 ]
 export const Button = (props) => {
     return (
-        <button className={`${props.name}  items-center justify-center leading-6  ease-linear duration-300   hover:shadow-[0px_0px_12px_0px_#7F04E3]   bg-btngradient text-white text-sm sm:text-xl  rounded-[50px] px-7 relative z-10 py-[14px]  font-medium`}>
+        <button className={`${props.name}  items-center justify-center leading-6  ease-linear duration-300   hover:shadow-[0px_0px_12px_0px_#7F04E3]   bg-btngradient text-white text-lg sm:text-xl  rounded-[50px] px-7 relative z-10 py-[14px]  font-medium`}>
             {props.text}
         </button>
     )
