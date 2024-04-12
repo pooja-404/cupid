@@ -9,7 +9,7 @@ const TrustedCompany = () => {
         >
             <div
                 id="howtouse"
-                className="max-w-[1320px] container-fuild   xl:-mt-9 md:mt-24 mt-7 pb-10 md:mb-8"
+                className="max-w-[1320px] container mx-auto  xl:-mt-9 md:mt-24 mt-7 pb-10 md:mb-8"
             >
                 <p className="  font-normal sm:text-xl text-lg   mt-9 leading-[30px] text-center text-gray-white-200">
                     Trusted by 4,000+ companies
