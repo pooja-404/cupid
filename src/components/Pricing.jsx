@@ -19,8 +19,8 @@ const Pricing = () => {
                         {
                             PricedataMonth.map((item, index) => (
                                 <div key={index} className='flex items-center justify-center w-full mt-8 lg:w-4/12 md:w-6/12 lg:mt-0 md:mt-10'>
-                                    <div className='max-w-[410px] relative z-10 transition-all duration-300 ease-linear cursor-pointer blur_box_border hover:scale-[1.03] hover:z-20 group lg:h-[725px] sm:h-[667px] lg:hover:h-[774px] sm:hover:h-[667px] h-full'>
-                                        <div className='sm:p-8 p-5 bg- rounded-3xl flex justify-between flex-col lg:h-[725px] sm:h-[667px] lg:hover:h-[774px] sm:hover:h-[667px] h-full transition-all duration-300 ease-linear'>
+                                    <div className='max-w-[410px] relative z-10 transition-all duration-300 ease-linear  blur_box_border hover:scale-[1.03] hover:z-20 group lg:h-[725px] sm:h-[667px] lg:hover:h-[774px] sm:hover:h-[667px] h-full'>
+                                        <div className='sm:p-8 p-5 bg- rounded-3xl flex justify-between flex-col lg:h-[725px] h-[667px] lg:hover:h-[774px] transition-all duration-300 ease-linear  hover:shadow-[10px_10px_37.7px_0px_#000000]'>
                                             <div className='transition-all duration-300 ease-linear '>
                                                 <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-3xl1 leading-18 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
                                                 <p className='my-6 text-base font-medium leading-15 text-dark-gray'>{item.para}</p>
@@ -36,7 +36,7 @@ const Pricing = () => {
                                                 <p className='mb-4 font-medium text-2sm text-dark-gray leading-17'>What’s included</p>
                                                 {item.includedata}
                                             </div>
-                                            <button className='py-2.5 px-3 border border-solid border-gray-black-200 after:bg-btngradient group-hover:border-none transition-all  bg-transparent duration-300 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:transition-all after:duration-300 after:ease-linear after:rounded-xl after:opacity-0 group-hover:after:opacity-100 relative'><p className='text-white text-base font-medium text-nowrap relative z-10'>Select Plan</p></button>
+                                            <button className='py-2 px-3 border border-solid border-gray-black-200 after:bg-btngradient group-hover:border-none transition-all  bg-transparent duration-300 ease-linear text-white text-base font-medium text-nowrap rounded-xl w-full after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:transition-all after:duration-300 after:ease-linear after:rounded-xl after:opacity-0 group-hover:after:opacity-100 relative'><p className='text-white text-base font-medium text-nowrap relative z-10'>Select Plan</p></button>
                                         </div>
                                     </div>
                                 </div >
@@ -47,10 +47,10 @@ const Pricing = () => {
                         {
                             PricedataYear.map((item, index) => (
                                 <div key={index} className='flex items-center justify-center w-full mt-8 lg:w-4/12 md:w-6/12 sm:w-10/12 lg:mt-0 md:mt-10'>
-                                    <div className='max-w-[404px] relative z-10 transition-all duration-300 ease-linear cursor-pointer blur_box_border hover:scale-[1.03] hover:z-20 group lg:h-[725px] sm:h-[667px] lg:hover:h-[774px] sm:hover:h-[667px] h-full'>
+                                    <div className='max-w-[404px] relative z-10 transition-all duration-300 ease-linear blur_box_border hover:scale-[1.03] hover:z-20 group lg:h-[725px] sm:h-[667px] lg:hover:h-[774px] sm:hover:h-[667px] h-full hover:shadow-[10px_10px_37.7px_0px_#000000] '>
                                         <div className='sm:p-8 p-5 rounded-3xl flex justify-between flex-col lg:h-[725px] h-[667px] lg:hover:h-[774px] transition-all duration-300 ease-linear'>
                                             <div>
-                                                <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-3xl1 leading-18 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent'>{item.heading}</h3>
+                                                <h3 className='inline-block text-lg font-medium text-white transition-all duration-500 ease-linear group-hover:text-3xl1 leading-18 group-hover:bg-clip-text group-hover:bg-textgradient group-hover:text-transparent  hover:shadow-[10px_10px_37.7px_0px_#000000]'>{item.heading}</h3>
                                                 <p className='my-6 text-base font-medium leading-15 text-dark-gray'>{item.para}</p>
                                                 <div className='flex items-center gap-2'>
                                                     <h3 className='font-semibold text-white sm:text-4xl2 text-3xl2 lg:text-5xl leading-14'>{item.price}</h3>
@@ -73,7 +73,7 @@ const Pricing = () => {
                     </>}
                 </div>
                 <div className='flex items-center justify-center'>
-                    <a href='home' className='bg-gray-white-500 inline-flex items-center justify-center sm:flex-row flex-col text-white sm:px-4 px-8 py-1.5 sm:rounded-2md rounded-3xl sm:gap-2 gap-1 mt-12 group'><p className='font-medium text-2sm leading-17 opacity-60 tracking-tightest'>Want enterprise features?</p><p className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-17'>Tell us more <WhiteArrow /></p></a>
+                    <a href='#' className='bg-gray-white-500 inline-flex items-center justify-center sm:flex-row flex-col text-white sm:px-4 px-8 py-1.5 sm:rounded-2md rounded-3xl sm:gap-2 gap-1 mt-12 group'><span className='font-medium text-2sm leading-17 opacity-60 tracking-tightest'>Want enterprise features?</span><span className='flex items-center gap-1 font-bold text-2sm tracking-tightest leading-17'>Tell us more <WhiteArrow /></span></a>
                 </div>
             </div>
             <div className='bg-[#2980D6] lg:w-[778px] h-[778px] w-[400px] blur-[1000px] absolute top-[25%] left-[-50%] lg:z-20 z-[9]'></div>

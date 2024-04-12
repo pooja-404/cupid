@@ -13,7 +13,7 @@ const Navsec = () => {
                 <div className=" flex items-center justify-between py-3">
                     <ul>
                         <li>
-                            <a className="flex items-center gap-2 text-3xl font-bold leading-9 text-white cursor-pointer z-10 relative" href="/"><span><Logo /></span>CupidAI</a>
+                            <a className="flex items-center gap-2 text-3xl font-bold leading-9 text-white cursor-pointer z-10 relative" href="#"><span><Logo /></span>CupidAI</a>
                         </li>
                     </ul>
                     <ul

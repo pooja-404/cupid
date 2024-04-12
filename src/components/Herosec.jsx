@@ -24,7 +24,7 @@ function Herosec() {
 
                 </div>
             </div>
-            <img src={dashboard} alt="poker" className=' lg:max-w-[915px] lg:pl-5 pl-7 w-full mx-auto relative  lg:z-20 z-[5] -translate-y-20  sm:-translate-y-44  lg:-translate-y-[24rem]' />
+            <img src={dashboard} alt="poker" className=' lg:max-w-[915px] w-full lg:mx-auto lg:pl-0 pl-5  max-lg:mx-1 relative  lg:z-20 z-[5] -translate-y-20 sm:-translate-y-44 lg:-translate-y-[24rem]' />
         </>
     )
 

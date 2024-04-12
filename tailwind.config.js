@@ -112,8 +112,6 @@ module.exports = {
         'headerTextgradient': "linear-gradient(88.36deg, #7F04E3 45.88%, #FF006B 76.63%)",
         'btngradient': "linear-gradient(191.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
         'gradientTrailBtn': "linear-gradient(96.17deg, #7F04E3 6%, #FF006B 98.41%)",
-
-        // =====
         "bg-gradient": "linear-gradient(235.8deg, #7F04E3 -12.6%, #FF006B 106.18%)",
         "bg_gradient": "linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #040403 100%);",
         'text-gradient': " linear-gradient(88.36deg, #7F04E3 45.88%, #FF006B 76.63%)",

@@ -6,12 +6,12 @@ const Footer = () => {
         <div className="relative mt-10 overflow-x-clip sm:mt-16 md:mt-24 lg:mt-32 ">
             <div className="container relative z-10 max-w-[1300px]">
                 <div className="flex flex-col items-center justify-between py-6 lg:flex-row">
-                    <a className="flex items-center gap-2 text-3xl font-bold leading-9 text-white" href="/"><span><Logo /></span>CupidAI</a>
+                    <a className="flex items-center gap-2 text-3xl font-bold leading-9 text-white" href="#Home"><span><Logo /></span>CupidAI</a>
                     <ul className="flex flex-wrap items-center justify-center gap-3 mt-3 md:gap-10 lg:gap-24 sm:mt-5 lg:mt-0">
                         {
                             linkData.map((item, index) => (
                                 <li key={index}>
-                                    <a className="text-xs leading-5 tracking-wide uppercase text-gray-white-100  navlink duration-300 ease-linear " href={item.path}>{item.link}</a>
+                                    <a className="text-xs leading-5 tracking-wide uppercase text-gray-white-100  navlink duration-300 ease-linear"href={item.path}>{item.link}</a>
                                 </li>
                             ))
                         }

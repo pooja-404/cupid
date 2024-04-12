@@ -1,8 +1,4 @@
-import blotshift from "../../assets/images/boltshift.webp";
-import lighbox from "../../assets/images/lightbox.webp";
-import featherdev from "../../assets/images/featherdev.webp";
-import spherule from "../../assets/images/spherule.webp";
-import globalbank from "../../assets/images/globalbank.webp";
+import { BoltShift, LightBox, FatherDev, Spherule, GlobalBank, } from "./Icons";
 import { DashBox } from "./TrustedIcons";
 export const crmData = [
     {
@@ -23,18 +19,27 @@ export const crmData = [
 ];
 
 export const companiesData = [
-    { companyLogo: blotshift, alt: "blotshift" },
-    { companyLogo: lighbox, alt: "lighbox" },
-    { companyLogo: featherdev, alt: "featherdev" },
-    { companyLogo: spherule, alt: "spherule" },
-    { companyLogo: globalbank, alt: "globalbank" },
-    { companyLogo: blotshift, alt: "blotshift", none: "slg:hidden" },
-    { companyLogo: lighbox, alt: "lighbox", none: "slg:hidden" },
-    { companyLogo: featherdev, alt: "featherdev", none: "slg:hidden" },
-    { companyLogo: spherule, alt: "spherule", none: "slg:hidden" },
-    { companyLogo: globalbank, alt: "globalbank", none: "slg:hidden" },
-    { companyLogo: lighbox, alt: "lighbox", none: "slg:hidden" },
-    { companyLogo: featherdev, alt: "featherdev", none: "slg:hidden" },
-    { companyLogo: spherule, alt: "spherule", none: "slg:hidden" },
-    { companyLogo: globalbank, alt: "globalbank", none: "slg:hidden" },
+    { companyLogo: (<BoltShift />), companyLink: "https://ecommerce-excite.vercel.app/"},
+    { companyLogo: (<LightBox />), companyLink: "https://lokeshdhakar.com/projects/lightbox2/" },
+    { companyLogo: (<FatherDev />), companyLink: "https://featherdev.com/" },
+    { companyLogo: (<Spherule />), companyLink: "https://spherule.org/" },
+    { companyLogo: (<GlobalBank />), companyLink: "https://www.globalbank.com.pa/es" },
+    { companyLogo: (<BoltShift />), companyLink: "https://ecommerce-excite.vercel.app/", ClassName: "slg:hidden" },
+    { companyLogo: (<LightBox />), companyLink: "https://lokeshdhakar.com/projects/lightbox2/", ClassName: "slg:hidden" },
+    { companyLogo: (<FatherDev />), companyLink: "https://featherdev.com/", ClassName: "slg:hidden" },
+    { companyLogo: (<Spherule />), companyLink: "https://spherule.org/", ClassName: "slg:hidden" },
+    { companyLogo: (<GlobalBank />), companyLink: "https://www.globalbank.com.pa/es", ClassName: "slg:hidden" },
+    { companyLogo: (<LightBox />), companyLink: "https://lokeshdhakar.com/projects/lightbox2/", ClassName: "slg:hidden" },
+    { companyLogo: (<FatherDev />), companyLink: "https://featherdev.com/v", ClassName: "slg:hidden" },
+    { companyLogo: (<Spherule />), companyLink: "https://spherule.org/", ClassName: "slg:hidden" },
+    { companyLogo: (<GlobalBank />), companyLink: "https://www.globalbank.com.pa/es", ClassName: "slg:hidden" },
+    { companyLogo: (<BoltShift />), companyLink: "https://ecommerce-excite.vercel.app/", ClassName: "slg:hidden" },
+    { companyLogo: (<LightBox />), companyLink: "https://lokeshdhakar.com/projects/lightbox2/", ClassName: "slg:hidden" },
+    { companyLogo: (<FatherDev />), companyLink: "https://featherdev.com/", ClassName: "slg:hidden" },
+    { companyLogo: (<Spherule />), companyLink: "https://spherule.org/", ClassName: "slg:hidden" },
+    { companyLogo: (<GlobalBank />), companyLink: "https://www.globalbank.com.pa/es", ClassName: "slg:hidden" },
+    { companyLogo: (<LightBox />), companyLink: "https://lokeshdhakar.com/projects/lightbox2/", ClassName: "slg:hidden" },
+    { companyLogo: (<FatherDev />), companyLink: "https://featherdev.com/", ClassName: "slg:hidden" },
+    { companyLogo: (<Spherule />), companyLink: "https://spherule.org/", ClassName: "slg:hidden" },
+    { companyLogo: (<GlobalBank />), companyLink: "https://www.globalbank.com.pa/es", ClassName: "slg:hidden" },
 ];
