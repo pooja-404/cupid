@@ -14,10 +14,10 @@ const Faq = () => {
                 <h2 className='lg:text-4xl sm:text-3xl2 text-3xl1 font-bold tracking-tighter text-white leading-11'>FAQs</h2>
                 <p className='pb-2 mt-5 font-normal leading-6 text-gray font-inter sm:text-xl text-lg md:leading-7 tracking-tightest md:mt-6'>Answers to the most frequently asked questions.</p>
                 {accordionData.map((item, index) => (
-                    <Accordion key={index} onClick={() => toggleAccordion(index)} className={`cursor-pointer border-b border-white border-opacity-10 mt-5 sm:mt-6 md:mt-8 ${item.id === 6 ? "border-0" : ""}`} open={open === index} icon={<Arrow id={index} open={open} />}>
-                        <AccordionHeader className={`font-semibold text-white text-2sm md:text-base text-start w-full justify-between gap-3 border-0  mb-0.5 pt-0 duration-500 leading-6 pb-5 sm:pb-6 md:pb-8 focus-visible:outline-none ${open === index ? "" : ""}`}>{item.title}
+                    <Accordion key={index} className={`border-b border-white border-opacity-10 md:pt-8 pt-6 pb-2 md:pb-4 ${item.id === 6 ? "border-0" : ""}`} open={open === index} icon={<Arrow id={index} open={open} />}>
+                        <AccordionHeader onClick={() => toggleAccordion(index)} className={`font-semibold cursor-pointer pt-0   text-white text-2sm md:text-base text-start w-full justify-between gap-3 border-0  duration-500 leading-6  focus-visible:outline-none ${open === index ? "" : ""}`}>{item.title}
                         </AccordionHeader>
-                        <AccordionBody className="py-2 !pt-0  pr-6 text-sm font-normal text-white opacity-70 md:text-sm sm:py-3"> {item.description}
+                        <AccordionBody className=" pr-6 text-sm font-normal text-white opacity-70 md:text-sm pt-0 "> {item.description}
                         </AccordionBody>
                     </Accordion>
                 ))
